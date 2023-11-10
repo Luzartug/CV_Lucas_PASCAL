@@ -1,7 +1,6 @@
 from pathlib import Path
 import streamlit as st
 from PIL import Image
-from emoji import emojize
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -11,7 +10,7 @@ picture = current_dir / "assets/profile-pic.png"
 
 # --- GENERAL Setting ---
 PAGE_TITLE = "Digital CV  |  Lucas PASCAL"
-PAGE_ICON = emojize(":black_large_square:") 
+PAGE_ICON = "⬛️"
 NAME= "Lucas PASCAL :wave:"
 DESCRIPTION = """
 I am in a last year Master in Data and AI, looking for a 6-months final internship as **Data Scientist Intern**.
