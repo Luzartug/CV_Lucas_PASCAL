@@ -1,2 +1,2 @@
-#Digital Resume Using Python & Streamlit
+# Digital Resume Using Python & Streamlit
 My digital CV on Streamlit.
