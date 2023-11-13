@@ -24,9 +24,14 @@ SOCIAL_MEDIA = {
 }
 PROJECTS = {
     "🏦 Société Générale: Market Risk Variation Algorithm Explanation":"https://wholesale.banking.societegenerale.com/en/solutions/investment-banking/",
-    "👀 Streamlit for Netflix Users":"",
-    "🧠 Psychologue Asistant: Conversational (text and speech) chatbot with emotional analysis":"",
-    "⛑️ E-Reputation analysis on TWITTER":""
+    "👀 Streamlit for Netflix Users":"https://github.com/Luzartug",
+    "🧠 Psychologue Asistant: Conversational (text and speech) chatbot with emotional analysis":"https://github.com/Luzartug",
+    "⛑️ E-Reputation analysis on TWITTER":"https://github.com/Luzartug"
+}
+
+CERTIFICATION ={
+    "AZ-900 certified : Azure Fundamentals":"https://www.credly.com/badges/6603caeb-7e02-4ad3-96be-048357487799/linked_in_profile",
+    "AI-900 certified : Azure AI Fundamentals":"https://www.credly.com/badges/fe94c44c-4607-49c3-89af-0022d8972c59/linked_in_profile",
 }
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
@@ -76,7 +81,7 @@ st.write(
     """ 
 )
 
-# --- SKILLS ---
+# --- HARD SKILLS ---
 st.write("#")
 st.subheader("Hard skills")
 st.write(
@@ -87,6 +92,13 @@ st.write(
     - 💽 Databases: mySQL, Postgres, MongoDB
     """
 )
+
+# --- CERTIF ---
+st.write("#")
+st.subheader("Certifications")
+for certif, link in CERTIFICATION.items():
+    st.write(f"- ✅ [{certif}]({link})")
+
 
 # --- WORK HISTORY ---
 st.write("#")
