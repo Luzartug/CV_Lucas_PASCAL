@@ -27,7 +27,7 @@ SOCIAL_MEDIA = {
 }
 PROJECTS = {
     "🏦 Société Générale: Market Risk Variation Algorithm Explanation":"https://wholesale.banking.societegenerale.com/en/solutions/investment-banking/",
-    "👀 End-to-end data pipeline integrates monitoring (MLflow), data and model versioning (DVC), and CI/CD processes (Docker)":"https://github.com/Luzartug/ML_pipeline",
+    "👀 End-to-end data pipeline integrates monitoring, data and model versioning (mlflow), and CI/CD processes (Docker)":"https://github.com/Luzartug/ML_pipeline",
     "📚 A RAG system uses a locally quantized Mistral model and llama-ccp to analyze and interpret the French Work Laws":"https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050/",
     "🧠 Psychologue Asistant: Conversational (text and speech) chatbot with emotional analysis":"https://github.com/Luzartug",
     "🎧 Podcast Analysis: Summarize of a podcast, keyword search and word cloud graph":"https://github.com/Luzartug"
@@ -85,9 +85,9 @@ st.write("\n")
 st.subheader("Hard & soft skills")
 st.write(
     """
-    - 💻 **Programming**: Python, SQL, Spark, Scala
-    - 🤖 **Gen AI**: LangChain, LlamaIndex, RAG (Pinecone...), Fine tuning (peft, LoRA)
-    - 📚 **Data Science**: Pandas, NumPy, Scikit-Learn, SciPy, PyTorch
+    - 💻 **Programming**: Python, SQL, Spark
+    - 🤖 **Gen AI**: LangChain, LlamaIndex, RAG (Pinecone...), Fine-tuning (peft, LoRA)
+    - 📚 **Data Science**: Pandas, NumPy, Scikit-Learn, SciPy, PyTorch, Streamlit/Dash
     - 🖥️ **ML/DevOps**: Git, Docker, Airflow, MLflow, DVC, Vertex, Bedrock, Azure-OpenAI
     - 💽 **Cloud**: Certifications ⬇️
     """
@@ -107,7 +107,7 @@ st.write("---")
 
 # --- JOB 1
 st.write("\n")
-st.write("🌆", "**ML Engineer | Paris, France | Equancy, EDG Groupe**")
+st.write("🌆", "**AI Engineer | Paris, France | Equancy, EDG Groupe**")
 st.write("03/2024 - 09/2024")
 st.write(
     """
@@ -120,7 +120,7 @@ st.write(
 
 # --- JOB 2
 st.write("\n")
-st.write("📈", "**Data Scientist Intern | London, UK | Eurostor Int.**")
+st.write("📈", "**Data Engineer | London, UK | Eurostor Int.**")
 st.write("11/2022 - 03/2023")
 st.write(
     """
