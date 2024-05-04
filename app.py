@@ -6,7 +6,7 @@ from PIL import Image
 CURRENT_DIR = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 CSS_FILE = CURRENT_DIR / "styles" / "main.css"
 ASSET = CURRENT_DIR / "assets"
-RESUME = ASSET / "CV_Lucas_PASCAL.pdf"
+RESUME = ASSET / "CV_Lucas_PASCAL_data.pdf"
 PROFILE_PICTURE = ASSET / "profile-pic.png"
 FAVICON_PATH = ASSET / "favicon.ico"
 FAVICON_IMG = Image.open(FAVICON_PATH)
