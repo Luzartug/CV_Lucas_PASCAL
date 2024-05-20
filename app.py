@@ -16,19 +16,20 @@ PAGE_TITLE = "Digital CV  |  Lucas PASCAL"
 PAGE_ICON = FAVICON_IMG
 NAME= "Hi, I'm Lucas :wave:"
 DESCRIPTION = """
-I am a French ML Engineer consultant.
+I am a French Data Scientist consultant.
 """
 EMAIL = "lucas_pascal@aol.com"
 SOCIAL_MEDIA = {
     "LinkedIn":"https://www.linkedin.com/in/lucas222pascal",
     "GitHub":"https://github.com/Luzartug",
-    "Kaggle":"https://www.kaggle.com/luzartug",
-    "Instagram":"https://www.instagram.com/"
-}
+    "Kaggle":"https://www.kaggle.com/luzartug"
+    }
+
 PROJECTS = {
-    "🏦 Société Générale: Market Risk Variation Algorithm Explanation":"https://wholesale.banking.societegenerale.com/en/solutions/investment-banking/",
+    "🏆 Hackathon Winner: Vigil'Auto: In-vehicle solution using ML and generative AI to predict driver under influence and provide real-time alerts": "https://github.com/julesrubin/VigilAuto",
+    "🏦 Société Générale: Market Risk Variation Algorithm Explanation":"http://lucaspascal.com",
     "👀 End-to-end data pipeline integrates monitoring, data and model versioning (mlflow), and CI/CD processes (Docker)":"https://github.com/Luzartug/ML_pipeline",
-    "📚 A RAG system uses a locally quantized Mistral model and llama-ccp to analyze and interpret the French Work Laws":"https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050/",
+    "📚 A RAG system uses a locally quantized Mistral model and llama-ccp to analyze and interpret the French Work Laws":"https://github.com/Luzartug/local_lawyer_bot/tree",
     "🧠 Psychologue Asistant: Conversational (text and speech) chatbot with emotional analysis":"https://github.com/Luzartug",
     "🎧 Podcast Analysis: Summarize of a podcast, keyword search and word cloud graph":"https://github.com/Luzartug"
 }
@@ -74,9 +75,9 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write("\n")
 st.subheader("About me")
 st.write("""
-        I have previous experiences as a software engineer (Eurostar), in finance (Société Générale), and data science consulting (Equancy, a data consulting agency).\n
-        I've lived in Paris, in London and Phnom Penh.
-        My education is in data science & engineering (EFREI, Panthéon Assas University) and business management.\n
+        I have previous experiences as a software/data engineer (Eurostar) and as data/AI engineer in finance (Société Générale), and in consulting (Equancy, Groupe EDG).\n
+        I've lived in Paris, in London and Phnom Penh.\n
+        My education is in engineering, data science and business management (EFREI, Panthéon Assas University).\n
         When my laptop is closed, I am also a passionate sailer and swimmer.
         """)
 
@@ -86,8 +87,8 @@ st.subheader("Hard & soft skills")
 st.write(
     """
     - 💻 **Programming**: Python, SQL, Spark
-    - 🤖 **Gen AI**: LangChain, LlamaIndex, RAG (Pinecone...), Fine-tuning (peft, LoRA)
-    - 📚 **Data Science**: Pandas, NumPy, Scikit-Learn, SciPy, PyTorch, Streamlit/Dash
+    - 🤖 **Gen AI**: LangChain (LCEL), LangSmith, RAG (Weaviate, LlamaIndex...), Fine-tuning
+    - 📚 **Data Science**: Pandas, NumPy, Scikit-Learn, SciPy, PyTorch, Streamlit
     - 🖥️ **ML/DevOps**: Git, Docker, Airflow, MLflow, DVC, Vertex, Bedrock, Azure-OpenAI
     - 💽 **Cloud**: Certifications ⬇️
     """
@@ -107,44 +108,43 @@ st.write("---")
 
 # --- JOB 1
 st.write("\n")
-st.write("🌆", "**AI Engineer | Paris, France | Equancy, EDG Groupe**")
+st.write("🌆", "**Data/AI Scientist | Paris, France | Equancy, EDG Groupe**")
 st.write("03/2024 - 09/2024")
 st.write(
     """
-    - → Fine-tuning of Stable diffusion model in order to generate marketing content for Vinci Airport client
-    - → Build a python package for feature selectors
-    - → Build Gen AI app (RAGs, Chain and Agents)
-    - → Creating a segmentation model for L'Oréal Professional
+    - → Created a generative AI app, using techniques like RAGs, Chains, and Agents
+    - → Adapted an image generation model for Vinci Airport marketing materials
+    - → Developed a model to forecast Nespresso Group's capsule sales
+    - → Designed a Python package for feature selection in datasets
     """
 )
 
 # --- JOB 2
 st.write("\n")
-st.write("📈", "**Data Engineer | London, UK | Eurostor Int.**")
+st.write("📈", "**Data Scientist | Paris, France | Société Générale**")
 st.write("11/2022 - 03/2023")
 st.write(
     """
-    - → Involved in the Delta Project, a major European merger in the sector, integrating Eurostar and Thalys to drive synergies 
-    and enhance operational efficiency
-    - → Developed data-driven dashboards, improving promotional effectiveness by 15%
-    - → Rotation in every team of the IS sales Team (teams in charge of eurostar.com)
-    - → Creating predictive models to monitor KPIs of the company
-    - → Working with stakeholders across the Digital Product team
+    - → Developed an NLP-based prototype to enhance automated insights for financial risk analysts
     """
 )
 
 # --- JOB 3
 st.write("\n")
-st.write("🦠", "**Hotline Health Consultant | Paris, France | French Health Agency (ARS)**")
-st.write("03/2020 - 06/2020")
+st.write("📈", "**Software/Data Engineer | London, UK | Eurostor Int.**")
+st.write("11/2022 - 03/2023")
 st.write(
     """
-    - → Worked during the first Covid-19 lockdown for the French Health Agency (ARS) on the 
-    website “Terr-eSanté”: the French equivalent to the NHS website.
+    - → Involved in the Delta Project, a major European merger in the sector, integrating Eurostar and Thalys to drive synergies and enhance operational efficiency
+    - → Developed data-driven dashboards, improving promotional effectiveness by 15%
+    - → Rotation in every team of the IS sales Team (teams in charge of eurostar.com)
+    - → Developed and deployed new features for the rebranding of Eurostar.com (merged with Thalys)
+    - → Extracted and formatted Jira data from the API for the analyst team
+    - → Hackathon Winner : proof of concept that allows customers to visualize their seats in 3D
     """
 )
 
-# --- JOB 3
+# --- JOB 4
 st.write("\n")
 st.write("🧠", "**Science Teacher | Phnom Penh, Cambodia | Royal University of Phnom Penh**")
 st.write("11/2019 - 06/2020")
