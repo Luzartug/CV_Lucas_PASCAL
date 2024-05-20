@@ -75,7 +75,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 st.write("\n")
 st.subheader("About me")
 st.write("""
-        I have previous experiences as a software/data engineer (Eurostar) and as data/AI engineer in finance (Société Générale), and in consulting (Equancy, Groupe EDG).\n
+        I have previous experiences as a Software/Data Engineer for Eurostar, as Data/AI Scientist in finance for Société Générale and in consulting (Equancy, Groupe EDG).\n
         I've lived in Paris, in London and Phnom Penh.\n
         My education is in engineering, data science and business management (EFREI, Panthéon Assas University).\n
         When my laptop is closed, I am also a passionate sailer and swimmer.
