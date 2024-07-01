@@ -9,6 +9,12 @@ ASSET = CURRENT_DIR / "assets"
 RESUME = ASSET / "CV_Lucas_PASCAL_data.pdf"
 PROFILE_PICTURE = ASSET / "profile-pic.png"
 FAVICON_PATH = ASSET / "favicon.ico"
+SOFTWARE_REPU_PATH = ASSET / "software_republique.jpeg"
+SOFTWARE_REPU_2_PATH = ASSET / "software_repu_2.jpeg"
+HOLIDAYS_PATH = ASSET / "holidays.jpg"
+HOLIDAYS_PATH = ASSET / "india.jpg"
+SAIL_PATH = ASSET / "sail.jpg"
+
 FAVICON_IMG = Image.open(FAVICON_PATH)
 
 # --- GENERAL Setting ---
@@ -26,13 +32,14 @@ SOCIAL_MEDIA = {
     }
 
 PROJECTS = {
-    "🏆 Hackathon Winner: Vigil'Auto: In-vehicle solution using ML and generative AI to predict driver under influence and provide real-time alerts": "https://github.com/julesrubin/VigilAuto",
     "🏦 Société Générale: Market Risk Variation Algorithm Explanation":"http://lucaspascal.com",
     "👀 End-to-end data pipeline integrates monitoring, data and model versioning (mlflow), and CI/CD processes (Docker)":"https://github.com/Luzartug/ML_pipeline",
     "📚 A RAG system uses a locally quantized Mistral model and llama-ccp to analyze and interpret the French Work Laws":"https://github.com/Luzartug/local_lawyer_bot/tree",
     "🧠 Psychologue Asistant: Conversational (text and speech) chatbot with emotional analysis":"https://github.com/Luzartug",
-    "🎧 Podcast Analysis: Summarize of a podcast, keyword search and word cloud graph":"https://github.com/Luzartug"
+    "🎧 Podcast Analysis: Summarize of a podcast, keyword search and word cloud graph":"https://github.com/Luzartug",
+    "🏆 Hackathon Winner 🏆: Vigil'Auto: In-vehicle solution using ML and generative AI to predict driver under influence and provide real-time alerts": "https://github.com/julesrubin/VigilAuto",
 }
+
 CERTIFICATION ={
     "AZ-900 certified : Azure Fundamentals":"https://www.credly.com/badges/6603caeb-7e02-4ad3-96be-048357487799/linked_in_profile",
     "AI-900 certified : Azure AI Fundamentals":"https://www.credly.com/badges/fe94c44c-4607-49c3-89af-0022d8972c59/linked_in_profile",
@@ -112,10 +119,9 @@ st.write("🌆", "**Data/AI Scientist | Paris, France | Equancy, EDG Groupe**")
 st.write("03/2024 - 09/2024")
 st.write(
     """
-    - → Created a generative AI app, using techniques like RAGs, Chains, and Agents
-    - → Adapted an image generation model for Vinci Airport marketing materials
+    - → Adapted an image generation model for Vinci Airport marketing materials 
     - → Developed a model to forecast Nespresso Group's capsule sales
-    - → Designed a Python package for feature selection in datasets
+    - → Created a generative AI app, using techniques like RAGs, Chains and Agents
     """
 )
 
@@ -135,9 +141,6 @@ st.write("📈", "**Software/Data Engineer | London, UK | Eurostor Int.**")
 st.write("11/2022 - 03/2023")
 st.write(
     """
-    - → Involved in the Delta Project, a major European merger in the sector, integrating Eurostar and Thalys to drive synergies and enhance operational efficiency
-    - → Developed data-driven dashboards, improving promotional effectiveness by 15%
-    - → Rotation in every team of the IS sales Team (teams in charge of eurostar.com)
     - → Developed and deployed new features for the rebranding of Eurostar.com (merged with Thalys)
     - → Extracted and formatted Jira data from the API for the analyst team
     - → Hackathon Winner : proof of concept that allows customers to visualize their seats in 3D
@@ -161,3 +164,17 @@ st.subheader("Projects & Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
+    
+software_repu_1 = Image.open(SOFTWARE_REPU_PATH)
+software_repu_2 = Image.open(SOFTWARE_REPU_2_PATH)
+st.image(software_repu_1)
+st.image(software_repu_2)
+
+# --- EXTRA WORK ---
+st.write("\n")
+st.subheader("Extra work - Hobbies")
+st.write("---")
+india = Image.open(HOLIDAYS_PATH)
+sail = Image.open(SAIL_PATH)
+st.image(sail)
+st.image(india)
